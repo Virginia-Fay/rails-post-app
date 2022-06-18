@@ -1,1 +1,12 @@
 <h1 class="title">Blog index</h1>
+
+<% @posts.each do |post| %>
+  <div class="card mb-3">
+    <div class="title">
+      <%= post.title %>
+    </div>
+    <div class="card-body">
+      <%= post.content %>
+    </div>
+  </div>
+<% end %>

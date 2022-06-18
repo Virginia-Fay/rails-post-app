@@ -2,8 +2,8 @@
 
 <% @posts.each do |post| %>
   <div class="card mb-3">
-    <div class="title">
-      <%= post.title %>
+    <div class="card-title">
+      <%= link_to post.title, post %>
     </div>
     <div class="card-body">
       <%= post.content %>

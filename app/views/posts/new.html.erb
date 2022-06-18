@@ -1,15 +1,13 @@
-
-
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-sm-4">
-      <h1 class="title">New post</h1>
+    <h1 class="title">New post</h1>
       <form action="">
         <%= simple_form_for(@post) do |f| %>
-        <%= f.input :title %>
-        <%= f.input :content %>
-        <%= f.submit "Create new post" %>
-      <% end %>
+          <%= f.input :title %>
+          <%= f.input :content %>
+          <%= f.submit "Create new post" %>
+        <% end %>
       </form>
     </div>
   </div>

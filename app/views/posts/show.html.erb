@@ -3,11 +3,12 @@
     <div class="card-title">
       <h1><%= @post.title %></h1>
     </div>
+    <hr>
     <div class="card-body">
       <%= @post.content %>
     </div>
     <div>
-      <%= link_to "Edit", edit_post_path(@post), class: "btn" %>
+      <%= link_to "Edit", edit_post_path(@post), class: "btn btn-warning" %>
     </div>
   </div>
 

@@ -15,3 +15,14 @@
 
   <%= link_to "All Posts", posts_path %>
 </div>
+
+<div class="container">
+  <div class="card mb-3">
+    <div class="card-body">
+      <h3><%= @post.comments.count %> Comments</h3>
+      <%= render @post.comments %>
+      <hr>
+      <%= render 'comments/form' %>
+    </div>
+  </div>
+</div>

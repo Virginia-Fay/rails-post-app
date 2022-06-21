@@ -12,8 +12,6 @@
       <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" },class: "btn btn-danger" %>
     </div>
   </div>
-
-  <%= link_to "All Posts", posts_path %>
 </div>
 
 <div class="container">
@@ -25,4 +23,9 @@
       <%= render 'comments/form' %>
     </div>
   </div>
+</div>
+
+
+<div class="container">
+  <%= link_to "All Posts", posts_path %>
 </div>

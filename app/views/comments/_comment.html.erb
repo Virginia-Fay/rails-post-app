@@ -1,0 +1,8 @@
+<div class="container mb-3">
+  <%= comment.name %>
+  <br>
+  <%= comment.comment %>
+</div>
+
+
+<%= link_to 'Delete', [comment.post, comment], method: :delete, class: "btn btn-danger mb-2", data: { confirm: "Are you sure?" } %>
